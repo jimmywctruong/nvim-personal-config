@@ -5,6 +5,7 @@ let vimplug_exists=expand('~/.config/nvim/autoload/plug.vim')
 
 let g:vim_bootstrap_langs = "c,elixir,elm,go,haskell,html,javascript,python,rust,scala,typescript"
 let g:vim_bootstrap_editor = "nvim"             " nvim or vim
+let g:coc_global_extensions = ['coc-eslint', 'coc-highlight', 'coc-pairs', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-yaml'']
 
 if !filereadable(vimplug_exists)
         if !executable("curl")
@@ -125,6 +126,7 @@ augroup END
 
 " coc nvim START
 " --------------
+
 " TextEdit might fail if hidden is not set.
 set hidden
 
