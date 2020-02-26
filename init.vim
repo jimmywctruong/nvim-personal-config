@@ -5,7 +5,7 @@ let vimplug_exists=expand('~/.config/nvim/autoload/plug.vim')
 
 let g:vim_bootstrap_langs = "c,elixir,elm,go,haskell,html,javascript,python,rust,scala,typescript"
 let g:vim_bootstrap_editor = "nvim"             " nvim or vim
-let g:coc_global_extensions = ['coc-eslint', 'coc-highlight', 'coc-pairs', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-yaml'']
+let g:coc_global_extensions = ['coc-eslint', 'coc-highlight', 'coc-pairs', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-yaml']
 
 if !filereadable(vimplug_exists)
         if !executable("curl")
@@ -28,6 +28,7 @@ Plug 'https://github.com/justinmk/vim-dirvish.git'          " Path navigator plu
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] } " Show what keys using <leader>,
 Plug 'junegunn/fzf', { 'do': './install --bin' }            " Fuzzy file search
 Plug 'junegunn/fzf.vim'                                     " Fuzzy file search vim
+Plug 'Yggdroot/indentLine'                                  " Add indentation lines
 
 " Language Support
 " ----------------
