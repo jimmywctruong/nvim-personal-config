@@ -9,5 +9,6 @@
       }
     }
   },
-  "codeLens.enable": true
+  "codeLens.enable": true,
+  "diagnostic.maxWindowHeight": 16
 }
