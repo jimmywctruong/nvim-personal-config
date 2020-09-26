@@ -7,6 +7,10 @@ let g:vim_bootstrap_langs = "c,elixir,elm,go,haskell,html,javascript,python,rust
 let g:vim_bootstrap_editor = "nvim"             " nvim or vim
 let g:coc_global_extensions = ['coc-eslint', 'coc-highlight', 'coc-pairs', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-yaml']
 
+" terraform
+let g:terraform_align=1
+let g:terraform_fmt_on_save=1
+
 if !filereadable(vimplug_exists)
         if !executable("curl")
                 echoerr "You have to install curl or first install vim-plug yourself!"
@@ -29,6 +33,7 @@ Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] } " Show what
 Plug 'junegunn/fzf', { 'do': './install --bin' }            " Fuzzy file search
 Plug 'junegunn/fzf.vim'                                     " Fuzzy file search vim
 Plug 'Yggdroot/indentLine'                                  " Add indentation lines
+Plug 'sbdchd/neoformat'
 
 " Language Support
 " ----------------
@@ -84,6 +89,9 @@ Plug 'derekwyatt/vim-scala'
 " typescript
 Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim'
+
+" terraform
+Plug 'hashivim/vim-terraform'
 
 " Appearance
 " ----------
@@ -201,10 +209,6 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
-
-" Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!

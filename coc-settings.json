@@ -7,6 +7,13 @@
       "initializationOptions": {
         "elmAnalyseTrigger": "change"
       }
+    },
+    "terraform": {
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "filetypes": ["terraform", "tf"],
+      "initializationOptions": {},
+      "settings": {}
     }
   },
   "codeLens.enable": true,
